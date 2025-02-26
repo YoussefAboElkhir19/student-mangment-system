@@ -5,7 +5,11 @@
 @section('content')
 <form method="POST" action="{{ route('courses.store') }}" >
     @csrf
+    <div class="my-4 text-center">
 
+        <h2 class=" fs-1 fw-bold"><i class="fa-solid fa-pen"></i> Create New Course</h2>
+
+    </div>
 
 <div class="mb-3">
     <label for="" class="form-label">Name</label>

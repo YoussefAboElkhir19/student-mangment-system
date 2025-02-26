@@ -5,7 +5,11 @@
 <form method="POST" action="{{ route('teachers.store') }}" >
     @csrf
 
+    <div class="my-4 text-center">
 
+        <h2 class=" fs-1 fw-bold"><i class="fa-solid fa-pen"></i> Create New Instractor</h2>
+
+    </div>
 <div class="mb-3">
     <label for="" class="form-label">Name</label>
     <input  type="text" class="form-control" id="title" name="name" value="{{ old('name') }}">

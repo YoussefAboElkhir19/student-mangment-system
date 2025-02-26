@@ -7,6 +7,11 @@
     @csrf
 
 @method('PUT')
+<div class="my-4 text-center">
+
+    <h2 class=" fs-1 fw-bold"><i class="fa-solid fa-pen-to-square"></i> Edit Payment</h2>
+
+</div>
 <div class="mb-3">
     <label for="" class="form-label">Enrollment No</label>
     <select name="enrollment_id" id="" class="form-control">

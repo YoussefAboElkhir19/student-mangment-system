@@ -7,6 +7,11 @@
     @csrf
 
 @method('PUT')
+<div class="my-4 text-center">
+
+    <h2 class=" fs-1 fw-bold"><i class="fa-solid fa-pen-to-square"></i> Edit Enrollment</h2>
+
+</div>
 <div class="mb-3">
     <label for="" class="form-label">Enrollment No</label>
     <input  type="text" class="form-control" id="title" name="enrollment_no" value="{{ $enroll->enrollment_no}}">

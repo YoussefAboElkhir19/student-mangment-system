@@ -60,7 +60,7 @@ class CourseController extends Controller
             'duration' => $duration,
             'content' => $content
         ]);
-        return redirect()->route('courses.index')->with('success', 'Course Updated Successfully');
+        return redirect()->route('courses.index')->with('success', 'Updated Course Successfully');
     }
     public function destroy($courseId)
     {

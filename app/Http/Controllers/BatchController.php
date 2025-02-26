@@ -39,7 +39,7 @@ class BatchController extends Controller
             'end_date' => $end_date,
             'course_id' => $course_id
         ]);
-        return redirect()->route('batches.index')->with('success', 'Batch Created Successfully');
+        return redirect()->route('batches.index')->with('success', 'Created Batch Successfully');
     }
     public function show($batchid)
     {
@@ -74,12 +74,12 @@ class BatchController extends Controller
             'end_date' => $end_date,
             'course_id' => $course_id
         ]);
-        return redirect()->route('batches.index')->with('success', 'Batch Updated Successfully');
+        return redirect()->route('batches.index')->with('success', 'Updated Batch Successfully');
     }
     public function destroy($batchId)
     {
         $batch = Batch::findorFail($batchId);
         $batch->delete();
-        return redirect()->route('batches.index')->with('delete', 'Batch Deleted Successfully');
+        return redirect()->route('batches.index')->with('delete', 'Deleted Batch Successfully');
     }
 }

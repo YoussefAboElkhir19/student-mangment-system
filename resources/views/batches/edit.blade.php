@@ -7,16 +7,11 @@
     @csrf
     @method('PUT')
 
-    {{-- @if ($errors ->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error )
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
+    <div class="my-4 text-center">
 
-    @endif --}}
+        <h2 class=" fs-1 fw-bold"><i class="fa-solid fa-pen-to-square"></i> Edit Batch</h2>
+
+    </div>
 <div class="mb-3">
     <label for="" class="form-label">Name Batch</label>
     <input  type="text" class="form-control" id="title" name="name" value="{{ $batch->name }}">

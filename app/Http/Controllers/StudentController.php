@@ -40,7 +40,7 @@ class StudentController extends Controller
             'email' => $email,
             'mobile' => $mobile
         ]);
-        return redirect()->route('students.index')->with('success', 'Student Added Successfully');
+        return redirect()->route('students.index')->with('success', 'Added Student Successfully');
     }
     public function show($studentId)
     {
@@ -79,7 +79,7 @@ class StudentController extends Controller
 
         ]);
         // redirection
-        return redirect()->route('students.index');
+        return redirect()->route('students.index')->with('success', 'Update Student Successfuly');
     }
     public function destory($studentId)
     {
@@ -88,6 +88,6 @@ class StudentController extends Controller
         // delete student
         $student->delete();
         // redirection
-        return redirect()->route('students.index')->with('delete', 'Student Deleted Successfully');
+        return redirect()->route('students.index')->with('delete', 'Deleted Student Successfully');
     }
 }
