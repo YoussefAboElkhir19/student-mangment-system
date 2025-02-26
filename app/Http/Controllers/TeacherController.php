@@ -35,7 +35,7 @@ class TeacherController extends Controller
             'address' => $address,
             'mobile' => $mobile
         ]);
-        return redirect()->route('teachers.index')->with('success', 'Teacher Added Successfully');
+        return redirect()->route('teachers.index')->with('success', 'Added Instractor  Successfully');
     }
     public function show($teacherId)
     {
@@ -65,12 +65,12 @@ class TeacherController extends Controller
             'address' => $address,
             'mobile' => $mobile
         ]);
-        return redirect()->route('teachers.index')->with('success', 'Teacher Updated Successfully');
+        return redirect()->route('teachers.index')->with('success', 'Updated Instractor  Successfully');
     }
     public function destroy($teacherId)
     {
         $teacher = Teacher::findorFail($teacherId);
         $teacher->delete();
-        return redirect()->route('teachers.index')->with('delete', 'Teacher Deleted Successfully');
+        return redirect()->route('teachers.index')->with('delete', 'Deleted Instractor  Successfully');
     }
 }

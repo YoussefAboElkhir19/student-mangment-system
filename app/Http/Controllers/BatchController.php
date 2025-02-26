@@ -57,7 +57,7 @@ class BatchController extends Controller
     public function update($batchId)
     {
         request()->validate([
-            'name' => ['min:3', 'unique:batches,name'],
+            'name' => ['min:3'],
             'start_date' => ['date'],
             'end_date' => ['date'],
             'course_id' => ['exists:courses,id']
