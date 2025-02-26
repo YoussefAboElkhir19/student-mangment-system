@@ -59,7 +59,7 @@ class EnrollmentController extends Controller
     public function update($enrollId)
     {
         request()->validate([
-            'enrollment_no' => ['unique:enrollments,id', 'numeric', 'unique:enrollments,enrollment_no'],
+            'enrollment_no' => ['unique:enrollments,id', 'numeric'],
             'student_id' => ['exists:students,id'],
             'batch_id' => ['exists:batches,id'],
             'join_date' => ['date'],
